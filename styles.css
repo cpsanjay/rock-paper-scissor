@@ -1,0 +1,53 @@
+* {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: wheat;
+}
+body {
+  background-color: rgb(105, 111, 71);
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 4rem;
+  transition: 100ms;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.results {
+  margin-top: 4rem;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.result-score {
+  margin-left: 0.5em;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.result-selection {
+  opacity: 0.5;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 1.5em;
+}
